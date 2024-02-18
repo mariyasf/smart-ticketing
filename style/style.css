@@ -75,16 +75,21 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.bus-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    background-color: #fff;
-    /* justify-content: space-between; */
+.bus-layout h1 {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
+
+.bus-seat-layout button {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 12px;
+    border-radius: 12px;
+    background: rgb(235, 230, 230);
+
+}
+
 
 .seat-row {
     display: flex;
@@ -92,21 +97,10 @@
     margin-bottom: 10px;
 }
 
-
-
-.seat {
-    width: 105px;
-    height: 50px;
-    background-color: #ccc;
-    margin: 5px;
-    text-align: center;
-    border-radius: 12px;
-
-    background: rgb(247, 248, 248);
-    line-height: 40px;
-    cursor: pointer;
+th {
+    font-size: medium;
 }
 
-.seat:hover {
-    background-color: #aea8a8;
-}
+
+
+.busSeatContainer {}
