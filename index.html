@@ -320,13 +320,13 @@
                   
                   <div class="flex-1">
                      <h2 class="text-2xl font-bold">Select Your Seat</h2>
-                     <div class="overflow-x-auto">
+                     <div class="overflow-x-auto bg-base-300">
                         <table class="table">
                            <!-- head -->
                            <thead>
                               <tr>
                                  <th></th>
-                                 <th>Seat</th>
+                                 <th>Seat <span class="totalBookedSeat">0</span></th>
                                  <th>Class</th>
                                  <th>Price</th>
                               </tr>
@@ -364,15 +364,34 @@
                      </div>
 
                     <!-- Customer Info Section -->
-                     <form class="grid grid-cols-1 text-start space-y-4 font-bold ">
+                     <form id="formContainer" class="grid grid-cols-1 text-start space-y-4 font-bold" id="passengerForm">
+                        
                         <label for="passengerName">Passenger Names <span class="text-red-600 text-xl">*</span></label>
                         <input class="p-4 border-2 rounded-md" type="text" id="passengerName" name="passengerName" placeholder="Enter your name" required>
-                        <label for="phoneNumber">Phone Number<span class="text-red-600  text-xl">*</span></label>
+                        
+                        <label for="phoneNumber">Phone Number<span class="text-red-600 text-xl">*</span></label>
                         <input class="p-4 border-2 rounded-md" type="number" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number" required>
-                        <label for="email">Email ID<span class="text-red-600  text-xl">*</span></label>
+                        
+                        <label for="email">Email ID<span class="text-red-600 text-xl">*</span></label>
                         <input class="p-4 border-2 rounded-md" type="email" id="email" name="email" placeholder="abc@gmail.com" required>
-                        <button class="btn bg-[#1DD100]"> Submit</button>
-                     </form>
+                        
+                        <button class="btn bg-[#1DD100]" id="confirmSubmitBtn">Submit</button>
+                    </form>
+
+                    <!-- Modal -->
+                    <input type="checkbox" id="confirmationModal" class="modal-toggle" />
+                    <div class="modal" role="dialog">
+                     <div id="myModal1" class="modal-box text-center">
+                        <img class="mx-auto" src="images/success.png" alt="">
+                        <h3 class="font-bold text-lg">SUCCESS</h3>
+                        <p class="py-4"> Thank you for Booking Our Bus Seats. 
+                                We are working hard to find the best service and deals for you. </p>
+                        <p class="py-4">Shortly you will find a confirmation in your email.</p>
+                        <div class="modal-action">
+                           <label  for="confirmationModal" class="btn">Close!</label>
+                        </div>
+                     </div>
+                  </div>
                      
                   </div>
                </section>
@@ -403,6 +422,8 @@
          </nav>
       </footer>
       <script src="scripts/utility.js"></script>
+      <script src="scripts/form.js"></script>
+      <script src="scripts/cupon.js"></script>
       <script src="scripts/script.js"></script>
    </body>
 </html>
