@@ -91,16 +91,12 @@
 }
 
 
-.seat-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
+
 
 th {
     font-size: medium;
 }
 
-
-
-.busSeatContainer {}
+.btn-bg-green {
+    background-color: #1DD100;
+}
