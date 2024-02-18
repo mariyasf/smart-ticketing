@@ -34,4 +34,11 @@ for (const button of buttons) {
     });
 }
 
-
+const offerBtn = document.getElementById('seeAllOffers');
+offerBtn.addEventListener('click', function () {
+    window.scrollTo({
+        top: 2200,
+        left: 0,
+        behavior: 'smooth'
+    });
+});

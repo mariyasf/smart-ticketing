@@ -142,7 +142,7 @@
                   </div>
                </div>
             </div>
-            <button class="btn bg-primary mt-8">See All Offers</button>
+            <button id="seeAllOffers" class="btn bg-primary mt-8">See All Offers</button>
          </section>
          <section class="mt-20 bg-[#F7F8F8] pt-12 ticketSection">
             <div class=" px-5 lg:px-12">
@@ -376,8 +376,12 @@
                         <input class="p-4 border-2 rounded-md" type="email" id="email" name="email" placeholder="abc@gmail.com" required>
                         
                         <button class="btn bg-[#1DD100]" id="confirmSubmitBtn">Submit</button>
+                    
                     </form>
-
+                    <div class="termCondition flex justify-between gap-20 mt-5">
+                        <a href="">Terms and Conditions</a>
+                        <a href="">Cancellation Policy</a>
+                    </div>
                     <!-- Modal -->
                     <input type="checkbox" id="confirmationModal" class="modal-toggle" />
                     <div class="modal" role="dialog">
@@ -421,6 +425,7 @@
             <a class="link link-hover">Cookie policy</a>
          </nav>
       </footer>
+
       <script src="scripts/utility.js"></script>
       <script src="scripts/form.js"></script>
       <script src="scripts/cupon.js"></script>

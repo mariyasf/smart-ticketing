@@ -100,3 +100,7 @@ th {
 .btn-bg-green {
     background-color: #1DD100;
 }
+
+.termCondition a {
+    text-decoration: underline;
+}
