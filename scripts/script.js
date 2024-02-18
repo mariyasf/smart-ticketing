@@ -34,6 +34,21 @@ for (const button of buttons) {
     });
 }
 
+function addTableData(buttonId) {
+
+    const seatTableBody = document.getElementById('seatTableBody');
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `
+                    <th>${seatTableBody.children.length + 1}</th>
+                    <td>${buttonId}</td>
+                    <td>Economy</td>
+                    <td>BDT: 550</td>
+                `;
+
+    seatTableBody.appendChild(newRow);
+    totalPrice += 550;
+}
+
 const offerBtn = document.getElementById('seeAllOffers');
 offerBtn.addEventListener('click', function () {
     window.scrollTo({
