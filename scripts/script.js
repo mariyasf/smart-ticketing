@@ -16,6 +16,7 @@ for (const button of buttons) {
 
         if (selectedButtons < maxSelectedButtons) {
             this.style.backgroundColor = 'green';
+            this.style.color = 'white';
             selectedButtons++;
             this.disabled = true;
         }
