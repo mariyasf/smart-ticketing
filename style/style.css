@@ -19,18 +19,9 @@
     background-size: cover;
     background-blend-mode: overlay;
     border-radius: 16px;
-    /* position: absolute; */
+
 }
 
-/* .ragtange {
-
-    left: 898px;
-    right: -898px;
-    top: 615px;
-    bottom: -615px;
-
-
-} */
 
 .ragtange .card {
     border-bottom: 3px solid rgb(29, 209, 0);
