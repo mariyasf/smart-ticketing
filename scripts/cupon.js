@@ -9,18 +9,20 @@ applyCuponBTN.addEventListener('click', function () {
     // NEW15 || Couple20
     if (selectedButtons == maxSelectedButtons) {
         if (cuponValue === "NEW15") {
-            const grandTotal = totalPrice - (totalPrice * .15);
+            const discountTotal = totalPrice * .15;
+            const grandTotal = totalPrice - discountTotal;
             updatePrice('totalGrandPrice', grandTotal);
 
             hideCuponSection();
-            discount(15);
+            discount(discountTotal, 15);
 
         }
         else if (cuponValue === "COUPLE20") {
-            const grandTotal = totalPrice - (totalPrice * .20);
+            const discountTotal = totalPrice * .20;
+            const grandTotal = totalPrice - discountTotal;
             updatePrice('totalGrandPrice', grandTotal);
             hideCuponSection();
-            discount(20);
+            discount(discountTotal, 20);
         }
         else {
             alert('Invalid Cupon');

@@ -20,10 +20,12 @@ function hideCuponSection() {
     cupon.classList.add('hidden');
 }
 
-function discount(discountAmount) {
+function discount(discountAmount, discountPercent) {
     const updateDiscountSection = document.getElementById('discountSection');
     const updateDiscountAmount = document.getElementById('discountAmount');
+    const updateDiscountPercent = document.getElementById('discountPercent');
 
     updateDiscountSection.classList.remove('hidden');
-    updateDiscountAmount.innerText = `BDT: ${discountAmount}%`;
+    updateDiscountPercent.innerText = `${discountPercent}%`;
+    updateDiscountAmount.innerText = `BDT: ${discountAmount}`;
 }
