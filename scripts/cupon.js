@@ -3,8 +3,8 @@ const applyCuponBTN = document.getElementById('applyBtn');
 
 applyCuponBTN.addEventListener('click', function () {
     const cuponInput = document.getElementById('cuponInputField')
-    const cuponValue = cuponInput.value;
-    console.log(cuponValue);
+    const cuponValue = cuponInput.value.split(" ").join("").toUpperCase();
+    // console.log(cuponValue);
 
     // NEW15 || Couple20
     if (selectedButtons == maxSelectedButtons) {
@@ -16,7 +16,7 @@ applyCuponBTN.addEventListener('click', function () {
             discount(15);
 
         }
-        else if (cuponValue === "Couple20") {
+        else if (cuponValue === "COUPLE20") {
             const grandTotal = totalPrice - (totalPrice * .20);
             updatePrice('totalGrandPrice', grandTotal);
             hideCuponSection();

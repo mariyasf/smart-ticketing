@@ -12,7 +12,7 @@ function updatePrice(id, prices) {
     const updatePrice = document.getElementById(id);
     updatePrice.innerText = prices;
 
-    console.log('Total Price Updated:', prices);
+    // console.log('Total Price Updated:', prices);
 }
 
 function hideCuponSection() {
